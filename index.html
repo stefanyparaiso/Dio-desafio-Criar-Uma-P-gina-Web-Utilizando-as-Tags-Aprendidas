@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+</head>
+<body>
+    <h1 id="inicio">Exemplo de matéria em um blog</h1>
+    <hr>
+
+    <h1>índice</h1>
+    <ul>
+        <li><a href="#index">Index.html</a></li>
+        <li><a href="#estrutura">Estrutura básica do HTML</a></li>
+        <li><a href="#tags">Falando sobre tags</a></li>
+        <li><a href="#atributos">Atributos das tags</a></li>
+        <li><a href="#textos">Textos</a></li>
+        <li><a href="#listas">Listas ordenadas e listas não-ordenadas</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#dicas">Melhores Práticas e Dicas Essenciais para Estudo de HTML</a></li>
+    </ul>
+
+    <h2 id="index">Index.html</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>Você não precisa necessariamente nomear todos os seus arquivos HTML como “index.html”, mas há razões práticas e convencionais para usar esse nome, especialmente para a página principal de um site:</p>    
+    
+    <p><strong>1. Página Padrão em Servidores Web:</strong></p>
+    <p>- Comportamento Padrão: A maioria dos servidores web (como Apache, Nginx ou serviços de hospedagem) são configurados para buscar automaticamente um arquivo chamado `index.html` quando você acessa um diretório sem especificar um arquivo. Por exemplo, ao acessar `www.exemplo.com`, o servidor vai buscar o `index.html` dentro do diretório raiz e exibi-lo como a página principal.</p>
+    <p>- Evite especificar o Nome do Arquivo na URL: Se o arquivo principal for nomeado como `index.html`, você pode acessar o site digitando apenas o domínio (exemplo: `www.exemplo.com`). Se usasse um nome diferente, como `home.html`, precisaria especificar a URL completa (`www.exemplo.com/home.html`), o que é menos prático.</p>
+    
+    <p><strong>2. Organização e Convenção:</strong></p>
+    <p>- Padrão da Web: Nomear o arquivo principal como `index.html` é uma convenção bem estabelecida na web. Isso facilita para outros desenvolvedores que acessarem seu projeto saber imediatamente qual arquivo é a página inicial.</p>
+    <p>- Estrutura Lógica: Se você tem um site com várias páginas, o uso de `index.html` como o ponto de entrada principal mantém a organização clara. Outras páginas podem ser nomeadas conforme sua função, como `about.html` para a página "Sobre", `contact.html` para "Contato", etc.</p>
+
+    <p><strong>3. Facilidade para Sistemas de Gerenciamento de Conteúdo (CMS):</strong></p>
+    <p>Muitos CMSs e frameworks web, como WordPress, utilizam o conceito de `index.html` ou `index.php` para gerenciar o ponto de entrada padrão da aplicação ou site. É uma prática amplamente adotada no desenvolvimento web.</p>
+    <p>Em resumo, o uso de `index.html` é uma convenção que simplifica o funcionamento do servidor e facilita a navegação para o usuário e a organização para desenvolvedores.</p>
+
+    <h2 id="estrutura">Estrutura básica do HTML</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p><strong>Aqui está a estrutura básica de um arquivo HTML:</strong></p>
+    <img src="imagem/html.png" width="800">
+
+    <p><strong>Componentes</strong></p>
+    <ul>
+        <li>&lt;!DOCTYPE html&gt;: Define o documento como HTML5.</li>
+        <li>&lt;html lang="pt-br"&gt;: A tag &lt;html&gt; define o início do documento, e o atributo lang indica o idioma do conteúdo.</li>
+        <li>&lt;head&gt;: Contém metadados sobre o documento, como charset, título, e links para arquivos externos (CSS, fontes).</li>
+        <li>&lt;body&gt;: É onde o conteúdo visível da página é colocado.</li>
+        <li>&lt;header&gt;: Seção que geralmente contém o título e o menu de navegação.</li>
+        <li>&lt;main&gt;: Parte principal do conteúdo da página.</li>
+        <li>&lt;footer&gt;: Rodapé da página.</li>
+        <li>&lt;link&gt;: Links para CSS e JavaScript: Usados para adicionar estilos e interatividade ao site.</li>
+    </ul>
+
+    <p>Essa é uma estrutura básica que pode ser expandida conforme necessário.</p>
+
+    <h2 id="tags">Falando sobre tags</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>A maioria das tags possui uma abertura e um fechamento, onde devemos fornecer informações específicas. A seguir, listei algumas tags e suas respectivas funções:</p>
+    <ul>
+        <li>&lt;i&gt; &lt;/i&gt;: Aplica estilo em itálico ao texto.</li>
+        <li>&lt;strong&gt; &lt;/strong&gt;: Aplica estilo em negrito.</li>
+        <li>&lt;img/&gt;: (Essa tag não possui fechamento) - Inserir imagens.</li>
+        <li>&lt;input/&gt;: (Essa tag não possui fechamento) - Cria um campo para inserir informações.</li>
+    </ul>
+
+    <h2 id="atributos">Atributos das tags</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>Os <strong>atributos de tags</strong> em HTML são usados para fornecer informações adicionais sobre os elementos. Eles aparecem sempre na abertura da tag e seguem o formato atributo="valor".</p>
+    <p>Esses atributos ajudam a customizar e controlar o comportamento dos elementos HTML de acordo com o conteúdo ou interação do usuário.</p>
+    <p>Abaixo estão alguns dos atributos mais comuns, aplicáveis a diversas tags:</p>
+
+    <p><strong>Atributos comuns</strong></p>
+    <ol>
+        <li><u>id</u>: Define um identificador único para o elemento, permitindo que seja referenciado por CSS, JavaScript ou links.</li><p>Exemplo: &lt;div id="cabecalho"&lt;/div&gt;</p><br>
+        <li><u>class</u>: Atribui uma ou mais classes a um elemento, facilitando o uso de estilos e comportamentos similares em vários elementos.</li><p>Exemplo: &lt;p class="texto-destaque"&lt;/p&gt;</p><br>
+        <li><u>style</u>: Permite adicionar estilos CSS diretamente ao elemento.style: Permite adicionar estilos CSS diretamente ao elemento.</li><p>Exemplo: &lt;h1 style="color: blue; font-size: 20px;"&gt;</p><br>
+        <li><u>title</u>: Fornece um texto descritivo exibido quando o usuário passa o mouse sobre o elemento.</li><p>Exemplo: &lt;a href="#" title="Clique aqui para saber mais"&gt;Saiba mais&lt;/a&gt;</p><br>
+        <li><u>src</u>: Usado em elementos como &lt;img&gt; e &lt;script&gt;, define a fonte de uma imagem ou arquivo externo.</li><p>Exemplo: &lt;img src="imagem.jpg" alt="Descrição" /&gt;</p><br>
+        <li><u>href</u>: Define o destino de um link em elementos como &lt;a&gt; (âncora).</li><p>Exemplo: &lt;a href="https://example.com"&gt;Visite nosso site&lt;/a&gt;</p><br>
+        <li><u>alt</u>: Usado em &lt;img&gt;, fornece um texto alternativo quando a imagem não pode ser exibida.</li><p>Exemplo: &lt;img src="foto.jpg" alt="Foto de perfil" /&gt;</p><br>
+        <li><u>placeholder</u>: Aplica-se a campos de formulário, como <input> &lt;input&gt;, e mostra um texto temporário até que o usuário insira algo.</li><p>Exemplo: &lt;input type="text" placeholder="Digite seu nome" /&gt;</p><br>
+        <li><u>value</u>: Define o valor inicial de elementos de formulário como <input> &lt;input&gt; e &lt;option&gt;.</li><p>Exemplo: &lt;input type="text" value="Exemplo" /&gt;</p><br>
+        <li><u>disabled</u>: Desabilita um elemento, tornando-o inacessível ao usuário.</li><p>Exemplo: &lt;button disabled&gt;Enviar&lt;/button&gt;</p><br>
+        <li><u>target</u>:  Utilizado em links (&lt;a&gt;), define onde abrir o documento vinculado. Por exemplo, _blank abre em uma nova aba.</li><p>Exemplo: &lt;a href="https://example.com" target="_blank"&gt;Abrir em nova aba&lt;/a&gt;</p><br>
+        <li><u>type</u>:  Define o tipo de um elemento, como em botões "(&lt;button&gt;)", entradas (&lt;input&gt;) e scripts (&lt;script&gt;).</li><p>Exemplo: &lt;input type="password" /&gt;</p><br>
+        <li><u>data-*</u>: Permite adicionar atributos personalizados que podem ser manipulados por JavaScript.</li><p>Exemplo: &lt;div data-user-id="123"&gt;&lt;/div&gt;</p><br>
+    </ol>
+
+    <h2 id="textos">Textos</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <ol>
+    <li><u>&lt;h1&gt;&lt;h1/&gt; até o &lt;h6&gt;&lt;h6/&gt;</u> :Definir títulos e subtítulos.</li><br>
+    <li><u>&lt;p&gt;&lt;/p&gt;</u> :Definir um parágrafo de texto.</li><br>
+    <li><u>&lt;blockquote&gt;&lt;/blockquote&gt;</u> :Definir uma citação.</li><br>
+    <li><u>&lt;u&gt;&lt;/u&gt;</u> :Sublinhar texto.</li><br>
+    <li><u>&lt;mark&gt;&lt;/mark&gt;</u> :Destacar ou realçar um trecho de texto que é relevante ou importante para o contexto em que está inserido</li><br>
+    <li><u>&lt;sup&gt;&lt;/sup&gt;</u> :Exibir texto como sobrescrito, ou seja, elevado em relação à linha base do texto normal.</li><br>    
+    </ol>
+
+    <h2 id="listas">Listas ordenadas e listas não-ordenadas</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <ul>
+        <li><u>&lt;ol&gt;&lt;/ol&gt;</u><strong> - Lista ordenada</strong></li><p>Ela é usada para apresentar itens que seguem uma sequência específica, como etapas de um processo ou classificações.</p><br>
+        <li><u>&lt;ul&gt;&lt;/ul&gt;</u><strong> - Lista não ordenada</strong></li><p>Essa lista é utilizada para apresentar itens onde a ordem não é importante, como uma lista de compras ou características.</p><br>
+        <li><u>&lt;li&gt;&lt;li&gt;</u> <strong> - Item da lista </strong></li> <p>Representa um item de lista em HTML e é usada dentro de listas ordenadas (&lt;ol&gt;) ou não ordenadas (&lt;ul&gt;). Cada elemento &lt;li&gt; define um item da lista.</p><br>   
+    </ul>
+
+    <h2 id="links">Links</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>Um link em HTML é criado usando a tag &lt;a&gt; (anchor), que permite que os usuários naveguem para outra página, site ou recurso ao clicar no texto ou na imagem associada. Os links são essenciais para a navegação na web.</p>
+    <p>O atributo self não é um atributo HTML padrão, mas pode ser uma referência a como as páginas se comportam em relação a links, geralmente mencionado em contextos de segurança e navegação. O que pode estar se referindo é o atributo target na tag &lt;a&gt;, que determina onde o link será aberto.</p>
+    <p>O atributo blank em HTML geralmente se refere ao valor _blank do atributo target na tag &lt;a&gt;. Quando usado, ele indica que o link deve ser aberto em uma nova aba ou janela do navegador.</p>
+    <p>O atributo title em HTML é usado para fornecer informações adicionais sobre um elemento, geralmente exibidas como uma dica (tooltip) quando o usuário passa o mouse sobre o elemento. Esse atributo pode ser aplicado a quase todas as tags HTML.</p>
+
+    <h2 id="dicas">Melhores Práticas e Dicas Essenciais para Estudo de HTML</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>Confira abaixo links de videoaulas sobre HTML para aprimorar seus conhecimentos e dominar essa linguagem de marcação. Aproveite os estudos!</p>
+
+    <ol>
+        <li><a href="https://youtu.be/-FQP7hD-J6A?si=_DERLM1lTJoHQrWX" target="_blank">Assista "Todas as tags HTML que você precisa saber"</a> Canal: Gimmi Codando</li>
+        <li><a href="https://youtu.be/sj0p9O85AIg?si=YVp52XH7OuQaY6XU" target="_blank">Assista "Curso de HTML completo"</a> Canal: Programação Web</li>
+        <li><a href="https://youtu.be/SV7TL0hxmIQ?si=yGO7jgerJro-P54u" target="_blank">Assista "Curso de HTML para iniciantes - Aprenda HTML em 1 hora"</a> Canal: Matheus Battisti - Hora de Codar</li>
+    </ol>
+</body>
+</html>
+
